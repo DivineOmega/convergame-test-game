@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convergame Engine Test Game</title>
+    <style>body {padding:0; margin:0; overflow: hidden; background-color: #000000;}</style>
+    <meta charset="UTF-8"/>
+</head>
+
+<body id="body">
+    <div id="game-wrapper" class="game-wrapper">
+        <canvas id="game">
+            <p>Error: Unsupported browser!</p>
+        </canvas>
+    </div>
+    
+    <!-- Game scenes -->
+    <script src="scenes/mainMenu.js"></script>
+    <script src="scenes/otherMenu.js"></script>
+    
+    <!-- Convergame -->
+    <script src="convergame-engine/convergame.js"></script>
+    <script src="convergame-engine/persistentScenes/timeHUD.js"></script>
+    
+    <!-- Main game JS -->
+    <script src="game.js"></script>
+    
+</body>
+
+</html>
