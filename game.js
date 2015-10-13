@@ -1,14 +1,14 @@
 var canvas = document.getElementById("game"),
 	mainMenu = new MainMenu(),
 	otherMenu = new OtherMenu(),
-	controllerTest = new ControllerTest(),
+	blankScene = new BlankScene(),
 	convergame = new Convergame(canvas);
 	
 convergame.init();
 
-var basicGameControllers = new BasicGameControllers();
-basicGameControllers.setDebug(true);
-convergame.addPersistentScene(basicGameControllers);
+var mouseControl = new MouseControl();
+mouseControl.setDebug(true);
+convergame.scene.addPersistentScene(mouseControl);
 
-convergame.changeScene(mainMenu);
+convergame.scene.changeScene(blankScene);
 convergame.startMainGameLoop();

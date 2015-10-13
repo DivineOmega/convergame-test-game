@@ -2,14 +2,14 @@
 function BlankScene()
 {
     this.convergame = null;
-    this.updateFunction = function(time)
+    this.update = function(time)
     {
         
     };
     
-    this.renderFunction = function()
+    this.render = function()
     {
-    
+        this.convergame.draw.blankCanvas('#222222');
     };
     
     this.init = function(convergame)
