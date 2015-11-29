@@ -6,9 +6,5 @@ var canvas = document.getElementById("game"),
 	
 convergame.init();
 
-var mouseControl = new MouseControl();
-mouseControl.setDebug(true);
-convergame.scene.addPersistentScene(mouseControl);
-
 convergame.scene.changeScene(blankScene);
 convergame.startMainGameLoop();
